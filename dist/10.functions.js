@@ -1,7 +1,12 @@
-export const sub = (a, b) => {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.add = exports.sub = void 0;
+const sub = (a, b) => {
     return a - b;
 };
-export const add = (a, b) => a + b;
+exports.sub = sub;
+const add = (a, b) => a + b;
+exports.add = add;
 function additionOverload(a, b) {
     if (typeof a === 'string' && typeof b === 'string') {
         return a + b;

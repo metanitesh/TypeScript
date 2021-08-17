@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.outcome = void 0;
 function flipCoin() {
     if (Math.random() > 0.5) {
         return 'success';
@@ -14,12 +17,12 @@ function maybeGetTheUser() {
     }
     return ['error', new Error('Coin failed')];
 }
-export const outcome = maybeGetTheUser();
+exports.outcome = maybeGetTheUser();
 // if (second instanceof Error) {
 //   console.log(second)
 // } else {
 //   console.log(second.email)
 // }
-if (outcome[0] === 'success') {
-    console.log(outcome);
+if (exports.outcome[0] === 'success') {
+    console.log(exports.outcome);
 }
