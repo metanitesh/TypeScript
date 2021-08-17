@@ -21,12 +21,12 @@ isJSON({
 })
 
 
-isJSON(() => "")
+// isJSON(() => "")
 
-isJSON(class { })
+// isJSON(class { })
 
-isJSON(undefined)
+// isJSON(undefined)
 
-isJSON(new BigInt(143))
+// isJSON(new BigInt(143))
 
-isJSON(isJSON)
+// isJSON(isJSON)
